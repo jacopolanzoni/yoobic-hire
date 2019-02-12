@@ -13,13 +13,13 @@
 ## The vision
 Hi, thanks your interest in YOOBIC and for agreeing to take on this small project. This will help us get to know you and your skills a bit better, and will hopefully be more fun and more useful than coding on a whiteboard.
 
-We want you to build a a small demo app in [ionic2](https://github.com/driftyco/ionic/tree/2.0). We're using ionic2 internally at YOOBIC to build a version of our mobile app for legacy devices, and a lot of the work in this role is going to be about building ionic2 app components.
+We want you to build a a small demo app in [ionic](https://ionicframework.com/). We're using ionic internally at YOOBIC to build a version of our mobile app for legacy devices, and a lot of the work in this role is going to be about building ionic2 app components.
 
-We understand that this is probably a brand new framework to you; you're probably going to need to take some of the time to learn it. That's actually entirely the point. The JavaScript world is constantly evolving and here at YOOBIC we put a lot of our efforts into evolving along with it. We're constantly learning and we want to see that you can too. In fact if you already have experience building projects in Ionic2 or Angular2 let us know! We'd love to take a look and we'll talk about what we'd like you to do instead.
+We understand that this is probably a brand new framework to you; you're probably going to need to take some of the time to learn it. That's actually entirely the point. The JavaScript world is constantly evolving and here at YOOBIC we put a lot of our efforts into evolving along with it. We're constantly learning and we want to see that you can too. In fact if you already have experience building projects in Ionic or Angular7 let us know! We'd love to take a look and we'll talk about what we'd like you to do instead.
 
 >***Nota bene***
 
->1) Ionic2 is still in beta currently and it has some bugs and kinks to be worked out. This means your app likely will too. If that's the case, it's fine. We're going to be looking more at how you built it than at what you built. Moreover, if you can't make it work, or you're struggling to finish in a reasonable amount of time, again: don't sweat it. We want to see what you've learned; if you don't have time to build all of it, then feel free sketch out the missing pieces and tell us how you'd build them and wire it all together. 
+>1) Ionic4 is recently out of beta and it may have some bugs and kinks to be worked out. This means your app likely will too. If that's the case, it's fine. We're going to be looking more at how you built it than at what you built. Moreover, if you can't make it work, or you're struggling to finish in a reasonable amount of time, again: don't sweat it. We want to see what you've learned; if you don't have time to build all of it, then feel free sketch out the missing pieces and tell us how you'd build them and wire it all together. 
 
 >2) We intend this to be an engaging learning opportunity for you. Have fun with it! If you are feeling comfortable and want to up the challenge, go beyond the spec. However, please try to hit the targets in the spec before going overboard. We're going to want to see what you've done with the core pieces first. We want to be able to see your whole app as well as review your code when we do our follow-up interview, so we advise you don't waste time adding what we're not going to get to see.
 
@@ -60,8 +60,8 @@ Follow with ionic2's [Getting Started](http://ionicframework.com/docs/v2/getting
 You can check out our [style guide](https://app.frontify.com/d/GEu6ejIkiL3x/yoobic-style-guide) for color ideas if you don't have your own. Also if you're really keen you can try to replicate our app's designs. Take a look at the images in the [Current Designs](current-designs) folder in this repo.
 
 ## The guides
-##### Ionic2
- + [Docs](http://ionicframework.com/docs/v2/)
+##### Ionic
+ + [Docs](http://ionicframework.com/docs/)
  + [Building apps with Ionic 2](http://adamdbradley.github.io/building-with-ionic2/#/)
  + [Ionic Conference App (complete ionic2 example app)](https://github.com/driftyco/ionic-conference-app)
 
