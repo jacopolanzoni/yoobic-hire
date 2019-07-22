@@ -19,7 +19,7 @@ We understand that this is probably a brand new framework to you; you're probabl
 
 >***Nota bene***
 
->1) Ionic4 is recently out of beta and it may have some bugs and kinks to be worked out. This means your app likely will too. If that's the case, it's fine. We're going to be looking more at how you built it than at what you built. Moreover, if you can't make it work, or you're struggling to finish in a reasonable amount of time, again: don't sweat it. We want to see what you've learned; if you don't have time to build all of it, then feel free sketch out the missing pieces and tell us how you'd build them and wire it all together. 
+>1) Ionic4 is has been recently released and it may have some bugs and kinks to be worked out. This means your app likely will too. If that's the case, it's fine. We're going to be looking more at how you built it than at what you built. Moreover, if you can't make it work, or you're struggling to finish in a reasonable amount of time, again: don't sweat it. We want to see what you've learned; if you don't have time to build all of it, then feel free sketch out the missing pieces and tell us how you'd build them and wire it all together. 
 
 >2) We intend this to be an engaging learning opportunity for you. Have fun with it! If you are feeling comfortable and want to up the challenge, go beyond the spec. However, please try to hit the targets in the spec before going overboard. We're going to want to see what you've done with the core pieces first. We want to be able to see your whole app as well as review your code when we do our follow-up interview, so we advise you don't waste time adding what we're not going to get to see.
 
@@ -46,9 +46,9 @@ You can build the app in typescript or javascript (ES6). We recommend trying typ
 
 
 ## The setup
-If you've read through the ionic2 & angular2 docs thoroughly and want to try to roll your own from scratch, feel free, but we recommend against it. Most of the work is boilerplate and not particularly interesting. Plus, [ionic's cli](http://ionicframework.com/docs/v2/cli/) includes a tutorial that will walk you through building the basics of building your app's skeleton.
+If you've read through the ionic2 & angular2 docs thoroughly and want to try to roll your own from scratch, feel free, but we recommend against it. Most of the work is boilerplate and not particularly interesting. Plus, [ionic's cli](https://ionicframework.com/docs/installation/cli) includes a tutorial that will walk you through building the basics of building your app's skeleton.
 
-Follow with ionic2's [Getting Started](http://ionicframework.com/docs/v2/getting-started/). Do the [installation](http://ionicframework.com/docs/v2/getting-started/installation), and then follow the [tutorial](http://ionicframework.com/docs/v2/getting-started/tutorial). Once you've done that you'll have most of the functional app and the views you need. Building the services will be the next step.
+Follow with ionic2's [Getting Started](https://ionicframework.com/docs/building/starting). Do the [installation](https://ionicframework.com/docs/installation/cli), and then follow the [tutorial](https://ionicframework.com/docs/angular/your-first-app). Once you've done that you'll have most of the functional app and the views you need. Building the services will be the next step.
 
 ## The git tips
 
