@@ -56,8 +56,9 @@ Follow with ionic2's [Getting Started](https://ionicframework.com/docs/building/
 
 >**Git Tip 2**: *Clear commit messages.* The better your commit messages, the better your `git log`. While you're not likely to take a lot of breaks in the middle of working on the project, this will make it easier to understand what you thought happened when you made that commit a few hours ago. Feel free to whatever style of commit messages you prefer or are most comfortable  for this project, as long as it's clear and understandable. The best commit message guidelines we've encountered (and the one we use at YOOBIC) are from the [Angular/Angular Contrib Guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
 
-## The designs
-You can check out our [style guide](https://app.frontify.com/d/GEu6ejIkiL3x/yoobic-style-guide) for color ideas if you don't have your own. Also if you're really keen you can try to replicate our app's designs. Take a look at the images in the [Current Designs](current-designs) folder in this repo.
+<!-- TODO: The link below is broken, it needs to be fixed but I don't know how! -->
+<!-- ## The designs
+You can check out our [style guide](https://app.frontify.com/d/GEu6ejIkiL3x/yoobic-style-guide) for color ideas if you don't have your own. Also if you're really keen you can try to replicate our app's designs. Take a look at the images in the [Current Designs](current-designs) folder in this repo. -->
 
 ## The guides
 ##### Ionic
@@ -69,7 +70,7 @@ You can check out our [style guide](https://app.frontify.com/d/GEu6ejIkiL3x/yoob
  + [Docs](https://angular.io/docs/)
  + [5-minute Quickstart](https://angular.io/docs/ts/latest/quickstart.html)
  + [Tutorial](https://angular.io/docs/ts/latest/tutorial/)
- + [Awesome Angular2](https://github.com/AngularClass/awesome-angular2) (curated list from [AngularClass](https://angularclass.github.io/)
+ + [Awesome Angular2](https://github.com/AngularClass/awesome-angular2)
 
 ##### Typescript
  + [Official Tutorial](https://www.typescriptlang.org/docs/tutorial.html)
