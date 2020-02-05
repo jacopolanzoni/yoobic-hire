@@ -1,15 +1,19 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
+import { IonicModule } from '@ionic/angular';
 
-import { Tab1Page } from './tab1.page';
+import { FilmComponent } from './film.component';
 
-describe('Tab1Page', () => {
+describe('FilmComponent', () => {
 
-  let component: Tab1Page;
+  let component: FilmComponent;
 
   beforeEach(async(() => TestBed.configureTestingModule({
     declarations: [
-      Tab1Page
+      FilmComponent
+    ],
+    imports: [
+      IonicModule.forRoot()
     ],
     schemas: [
       NO_ERRORS_SCHEMA
@@ -17,7 +21,7 @@ describe('Tab1Page', () => {
   }).compileComponents()));
 
   beforeEach(() => {
-    component = TestBed.createComponent(Tab1Page).componentInstance;
+    component = TestBed.createComponent(FilmComponent).componentInstance;
   });
 
   it('should be defined', () => {

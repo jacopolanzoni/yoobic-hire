@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let film of films$ | async" color="primary" (click)="onFilmClick(film)">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Episode {{film.episode_id}}
+      </ion-card-subtitle>
+      <ion-card-title>
+        {{film.title}}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img [src]="film.poster"></ion-img>
+    </ion-card-content>
+  </ion-card>    
+</ion-content>

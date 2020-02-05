@@ -1,15 +1,15 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
 
-import { Tab1Page } from './tab1.page';
+import { HomePage } from './home.page';
 
-describe('Tab1Page', () => {
+describe('HomePage', () => {
 
-  let component: Tab1Page;
+  let component: HomePage;
 
   beforeEach(async(() => TestBed.configureTestingModule({
     declarations: [
-      Tab1Page
+      HomePage
     ],
     schemas: [
       NO_ERRORS_SCHEMA
@@ -17,7 +17,7 @@ describe('Tab1Page', () => {
   }).compileComponents()));
 
   beforeEach(() => {
-    component = TestBed.createComponent(Tab1Page).componentInstance;
+    component = TestBed.createComponent(HomePage).componentInstance;
   });
 
   it('should be defined', () => {

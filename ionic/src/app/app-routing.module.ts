@@ -13,7 +13,7 @@ import { AuthGuard } from './guards/auth.guard';
       }, {
         path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
       }, {
-        path: 'list', loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+        path: 'films', loadChildren: () => import('./films/films.module').then(m => m.FilmModule)
       }]
     }, {
       path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
