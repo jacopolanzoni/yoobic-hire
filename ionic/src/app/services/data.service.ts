@@ -1,5 +1,5 @@
 import { forkJoin, Observable } from 'rxjs';
-import { flatMap, map } from 'rxjs/operators';
+import { flatMap, map, tap } from 'rxjs/operators';
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -11,10 +11,11 @@ import { Film } from '../interfaces/film.interface';
 })
 export class DataService {
 
-  private readonly swApiUrl = 'https://swapi.co/api/films/';
+  private cachedFilms: Film[];
   private readonly omdbApiUrl = 'http://www.omdbapi.com/';
   private readonly omdbKey = 'c20ae1e1';
   private readonly omdbUserId = 'tt3896198';
+  private readonly swApiUrl = 'https://swapi.co/api/films/';
 
   constructor(
     private readonly httpClient: HttpClient
@@ -23,8 +24,15 @@ export class DataService {
   public getStarWarsFilms() {
     return this.httpClient.get<{results: Film[]}>(this.swApiUrl).pipe(
       map(response => response.results.sort((a, b) => a.episode_id - b.episode_id)),
-      flatMap((films: Film[]) => this.addPosterToFilms(films))
+      flatMap((films: Film[]) => this.addPosterToFilms(films)),
+      tap((films: Film[]) => {
+        this.cachedFilms = films;
+      })
     );
+  }
+
+  public getStarWarsFilm(episodeId: number): Film {
+    return this.cachedFilms.find((film: Film) => film.episode_id === episodeId);
   }
 
   private addPosterToFilms(films: Film[]): Observable<Film[]> {

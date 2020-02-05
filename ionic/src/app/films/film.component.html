@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Episode {{ film.episode_id }}
+    </ion-title>
+    <ion-buttons slot="secondary">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-card>
+    <h1>{{film.title}} ({{film.release_date | date: 'y' }})</h1>
+    <ion-img [src]="film.poster"></ion-img>
+    <h3>Director: {{film.director}}</h3>
+    <h3>Producer: {{film.producer}}</h3>
+    <h5>{{film.opening_crawl}}</h5>
+  </ion-card>
+</ion-content>

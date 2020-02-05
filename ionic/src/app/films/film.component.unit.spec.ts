@@ -1,19 +1,27 @@
+import { of } from 'rxjs';
+
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
+import { DataService } from '../services/data.service';
 import { FilmComponent } from './film.component';
 
 describe('FilmComponent', () => {
 
   let component: FilmComponent;
 
+  const mockActivatedRoute: ActivatedRoute = {
+    paramMap: of()
+  } as ActivatedRoute;
+
   beforeEach(async(() => TestBed.configureTestingModule({
     declarations: [
       FilmComponent
     ],
-    imports: [
-      IonicModule.forRoot()
+    providers: [
+      { provide: ActivatedRoute, useValue: mockActivatedRoute },
+      { provide: DataService, useValue: {} }
     ],
     schemas: [
       NO_ERRORS_SCHEMA
