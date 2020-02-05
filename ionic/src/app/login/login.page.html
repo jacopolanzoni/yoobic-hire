@@ -1,0 +1,51 @@
+
+<ion-content>
+  <ion-img class="main-icon" src="assets/goodreads.png"></ion-img>
+  <div class="title">
+    <h1 class="text">Sign In</h1>
+  </div>
+  <form class="login-form">
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input
+        [(ngModel)]="user.email"
+        inputmode="email"
+        name="email"
+        required
+        type="email"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input
+        [(ngModel)]="user.password"
+        inputmode="text"
+        name="password"
+        required
+        type="password"
+      ></ion-input>
+    </ion-item>
+    <div class="forgot-password-container">
+      <div class="forgot-password-text">forgot password?</div>
+    </div>
+    <div class="title">
+      <h6 class="text">Sign In with</h6>
+    </div>
+    <ion-img class="icon" src="assets/f_logo_RGB-Blue_58.png"></ion-img>
+    <ion-row>
+      <ion-col col-6> 
+        <ion-button color="secondary" expand="block" shape="round">
+          Sign Up
+        </ion-button>
+      </ion-col> 
+      <ion-col col-6> 
+        <ion-button color="primary" expand="block" shape="round" type="submit" (click)="onSubmit()">
+          Sign In
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <div class="terms-and-conditions-container">
+    <div class="terms-and-conditions-text">Terms and conditions</div>
+  </div>
+</ion-content>

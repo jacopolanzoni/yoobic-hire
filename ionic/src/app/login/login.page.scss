@@ -1,0 +1,40 @@
+ion-content {
+  background: rgb(251, 247, 244);
+}
+
+ion-img.main-icon {
+  height: 64px;
+  margin: 10% auto;
+}
+
+div.title {
+  display: flex;
+  .text {
+    margin: auto;
+  }
+}
+
+form.login-form {
+  margin: 15% auto;
+
+  div.forgot-password-container {
+    display: flex;
+    div.forgot-password-text {
+      margin: 5% 0 5% calc(100% - 75px);
+      font-size: xx-small;
+    }
+  }
+  
+  ion-img.icon {
+    height: 32px;
+    margin: 5%;
+  }  
+}
+
+div.terms-and-conditions-container {
+  display: flex;
+  div.terms-and-conditions-text {
+    margin: 0 auto;
+    font-size: xx-small;
+  }
+}
