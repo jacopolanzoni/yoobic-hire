@@ -7,20 +7,31 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-import {
-  MatchResults,
-} from '@stencil/router';
+
 
 export namespace Components {
-  interface AppHome {}
-  interface AppProfile {
-    'match': MatchResults;
+  interface AppDay {
+    'day': number;
   }
+  interface AppHome {}
+  interface AppMonth {
+    'firstMonday': number;
+  }
+  interface AppMonthYear {}
   interface AppRoot {}
+  interface AppWeek {
+    'firstDay': number;
+  }
 }
 
 declare global {
 
+
+  interface HTMLAppDayElement extends Components.AppDay, HTMLStencilElement {}
+  var HTMLAppDayElement: {
+    prototype: HTMLAppDayElement;
+    new (): HTMLAppDayElement;
+  };
 
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
@@ -28,10 +39,16 @@ declare global {
     new (): HTMLAppHomeElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLAppMonthElement extends Components.AppMonth, HTMLStencilElement {}
+  var HTMLAppMonthElement: {
+    prototype: HTMLAppMonthElement;
+    new (): HTMLAppMonthElement;
+  };
+
+  interface HTMLAppMonthYearElement extends Components.AppMonthYear, HTMLStencilElement {}
+  var HTMLAppMonthYearElement: {
+    prototype: HTMLAppMonthYearElement;
+    new (): HTMLAppMonthYearElement;
   };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
@@ -39,24 +56,43 @@ declare global {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
+
+  interface HTMLAppWeekElement extends Components.AppWeek, HTMLStencilElement {}
+  var HTMLAppWeekElement: {
+    prototype: HTMLAppWeekElement;
+    new (): HTMLAppWeekElement;
+  };
   interface HTMLElementTagNameMap {
+    'app-day': HTMLAppDayElement;
     'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
+    'app-month': HTMLAppMonthElement;
+    'app-month-year': HTMLAppMonthYearElement;
     'app-root': HTMLAppRootElement;
+    'app-week': HTMLAppWeekElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface AppHome {}
-  interface AppProfile {
-    'match'?: MatchResults;
+  interface AppDay {
+    'day'?: number;
   }
+  interface AppHome {}
+  interface AppMonth {
+    'firstMonday'?: number;
+  }
+  interface AppMonthYear {}
   interface AppRoot {}
+  interface AppWeek {
+    'firstDay'?: number;
+  }
 
   interface IntrinsicElements {
+    'app-day': AppDay;
     'app-home': AppHome;
-    'app-profile': AppProfile;
+    'app-month': AppMonth;
+    'app-month-year': AppMonthYear;
     'app-root': AppRoot;
+    'app-week': AppWeek;
   }
 }
 
@@ -66,9 +102,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-day': LocalJSX.AppDay & JSXBase.HTMLAttributes<HTMLAppDayElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-      'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+      'app-month': LocalJSX.AppMonth & JSXBase.HTMLAttributes<HTMLAppMonthElement>;
+      'app-month-year': LocalJSX.AppMonthYear & JSXBase.HTMLAttributes<HTMLAppMonthYearElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'app-week': LocalJSX.AppWeek & JSXBase.HTMLAttributes<HTMLAppWeekElement>;
     }
   }
 }

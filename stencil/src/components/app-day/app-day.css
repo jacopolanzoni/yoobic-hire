@@ -1,0 +1,16 @@
+.day {
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: solid 2px lightseagreen;
+  color: lightseagreen;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.day:hover, .day:focus {
+  background-color: lightseagreen;
+  color: aliceblue;
+}
